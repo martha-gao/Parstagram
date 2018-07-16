@@ -68,7 +68,6 @@ public class CameraFragment extends Fragment {
                                 @Override
                                 public void done(ParseException e) {
                                     if (e == null) {
-                                        // successful
                                         Toast.makeText(getContext(), "Post successful! :)", Toast.LENGTH_SHORT).show();
                                     } else {
                                         e.printStackTrace();
@@ -82,7 +81,6 @@ public class CameraFragment extends Fragment {
                 });
             }
         });
-        // EditText etFoo = (EditText) view.findViewById(R.id.etFoo);
     }
 
     public void setSelectedPhoto(File file) {
