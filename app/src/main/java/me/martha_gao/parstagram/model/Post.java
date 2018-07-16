@@ -33,11 +33,13 @@ public class Post extends ParseObject {
         put(KEY_USER, user);
     }
 
+
     public static class Query extends ParseQuery<Post> {
         public Query() {
             super(Post.class);
         }
         public Query getTop() {
+            orderByDescending("createdAt");
             setLimit(20);
             return this;
         }

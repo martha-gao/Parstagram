@@ -7,52 +7,58 @@
     tools:context=".SignupActivity">
 
     <TextView
-        android:id="@+id/tvUsername"
+        android:id="@+id/tvUsernameTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignBaseline="@+id/etNewUser"
         android:layout_alignStart="@+id/tvPassword"
-        android:layout_marginTop="83dp"
         android:text="Username" />
 
     <TextView
         android:id="@+id/tvPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etNewPass"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginStart="36dp"
         android:text="Password" />
 
     <EditText
         android:id="@+id/etNewUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/tvUsername"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btCreateUser"
+        android:layout_marginTop="173dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:text="Enter username..." />
+        android:hint="Enter username..." />
 
     <EditText
         android:id="@+id/etNewPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/etNewUser"
-        android:layout_marginTop="116dp"
+        android:layout_centerVertical="true"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:text="Enter password..." />
+        android:hint="Enter password..."/>
 
     <Button
         android:id="@+id/btCreateUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="115dp"
+        android:text="Create Account" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="192dp"
-        android:text="Create Account" />
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/nav_logo_whiteout" />
 </RelativeLayout>

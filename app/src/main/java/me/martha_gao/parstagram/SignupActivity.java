@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.parse.ParseException;
 import com.parse.ParseUser;
@@ -35,10 +36,12 @@ public class SignupActivity extends AppCompatActivity {
                 user.signUpInBackground(new SignUpCallback() {
                     public void done(ParseException e) {
                         if (e == null) {
+                            Toast.makeText(SignupActivity.this, "Sign-up successful!", Toast.LENGTH_SHORT).show();
                             finish();
                         } else {
                             // Sign up didn't succeed. Look at the ParseException
                             // to figure out what went wrong
+                            Toast.makeText(SignupActivity.this, "Sign-up failed: try a different username?", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

@@ -2,25 +2,36 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<!--    <item
+    <item
         android:id="@+id/action_timeline"
         android:enabled="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/instagram_home_outline_24"
         android:title="@string/Timeline"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_schedules"
+        android:id="@+id/action_search"
         android:enabled="true"
-        android:icon="@drawable/ic_access_time_white_24dp"
-        android:title="@string/text_schedules"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/Search"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_music"
+        android:id="@+id/action_camera"
         android:enabled="true"
-        android:icon="@drawable/ic_audiotrack_white_24dp"
-        android:title="@string/text_music"
+        android:icon="@drawable/instagram_new_post_outline_24"
+        android:title="@string/Camera"
         app:showAsAction="ifRoom" />
--->
+    <item
+        android:id="@+id/action_notifications"
+        android:enabled="true"
+        android:icon="@drawable/ufi_heart"
+        android:title="@string/Notifications"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/instagram_user_outline_24"
+        android:title="@string/Profile"
+        app:showAsAction="ifRoom" />
+
 </menu>
 
-<!-- make a new thing for each tab -->
