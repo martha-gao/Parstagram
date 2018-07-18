@@ -26,7 +26,6 @@ import java.io.File;
 
 public class HomeActivity extends AppCompatActivity {
 
-
     FrameLayout flContainer;
     FragmentTransaction fragmentTransaction;
 

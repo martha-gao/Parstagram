@@ -26,8 +26,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
 
     private List<Post> mPosts;
     // pass in the Tweets array in the constructor
-    public PostAdapter(List<Post> posts) {
-        mPosts = posts;
+    public PostAdapter(List<Post> posts) { mPosts = posts;
     }
 
     // for each row, inflate the layout (with data) and cache references into ViewHolder
@@ -38,8 +37,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
 
-        View tweetView = inflater.inflate(R.layout.item_post, parent, false);
-        return new ViewHolder(tweetView);
+        View postView = inflater.inflate(R.layout.item_post, parent, false);
+        return new ViewHolder(postView);
     }
 
     // bind the values based on the position of the element
